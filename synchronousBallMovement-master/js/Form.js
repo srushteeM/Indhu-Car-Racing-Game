@@ -1,15 +1,29 @@
 class Form{
-    constructor(){}
+    constructor(){
+
+    }
     display(){
-        var title=createElement('h2');
-        title.html("CAR RACING GAME");
-        title.position(130,0);
+        var title=createElement('h1');
+        title.html("CAR RACE");
+        title.position(170,0)
+        title.style("color","red")
+        title.style("fontFamily","cursive");
 
-        var textBox=createInput("");
-        textBox.position(200,100);
+        var input=createInput("Enter Name");
+        input.position(145,150);
+        input.style("borderWidth","4px");
+        input.style("borderRadius","14px");
+        input.size(200,50);
 
-        var button=createButton("PLAY");
-        button.position(200,170);
-
+        var button=createButton("REGISTER");
+        button.position(170,280)
+        button.size(150,40);
+        button.style("borderTopLeftRadius","14px");
+        button.style("borderBottomRightRadius","14px");
+        button.style("borderWidth","7px");
+        button.style("backgroundColor","lightblue");
+        button.style("fontSize","20px");
+        button.style("fontWeight","bold");
+        button.style("borderStyle","ridge ");
     }
 }
